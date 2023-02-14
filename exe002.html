@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 style="color: rgb(45, 27, 151);">JAVASCRIPT</h1>
+    </header>
+    <nav>
+        <a href="#">OPC1</a>
+        <a href="#">OPC2</a>
+        <a href="#">OPC3</a>
+    </nav>
+    <main>
+        <h1>TESTE</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta earum saepe quis eos sit reprehenderit ad, sapiente praesentium voluptatibus. Vero, minima voluptatibus quibusdam labore temporibus rerum aliquid ipsa possimus id. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse voluptates tenetur ipsam tempora deserunt nesciunt suscipit amet natus quas ipsa, recusandae iste dolor repellendus molestias sunt ab itaque harum rerum. Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+        <p>Non atque, id minus, nesciunt vero qui repellendus beatae perspiciatis, repellat earum ratione error debitis veniam neque. Quae mollitia laborum aliquid maxime!</p>
+    </main>
+    <footer>
+        <p> Site Teste  feito por: <a href="http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K2732552Y9&tokenCaptchar=03AGdBq26yiKXpFoGAfgAMjVYa_VjaeIha_6UHjnMm7CisWdhyLo3qyOHhi8c43OwZY-e_RH0FfEFjv0EHsxl8JGqYTtFEiSN66tDX32oj8rCHKQfjXJPWKIW538JXG0giE0iuueb-AyOycLgPmySeUkk9s51J4mrfmAo3dXQTvChJzYfwfvadbc6_G6E4wDK1p0N_qJPxJuRrfe62xELefKWhWmbf1sPHPvZBVDmP4nXiSBxTR05c6OrU3RzkD1ZHm2mdXXSl_u7M_RNQ7mUavI36L71uniuKVjyA4eaUocIRX6llaMWWgBwfz2jgm6XoDAEREs5qI0LUKCcyKnEwvCTrtxkEIOIOENGyDBzVhS3CuAg87su1LseJso1tZSuXL4GI06AFawNprqeCTcWf0fQhhNekNfV7-SCCWFpauiQj8TK1upWQTSL_hQdkK39xA6a1nkpbAYx5UuEIgeVJupnJG1iMv3aI4A" target="_blank">Antonio Fialho</a>
+        </p>
+    </footer>
+    <script>
+        var Nome1 = window.prompt('Qual é o seu nome?')
+        window.alert('olá, bom conhecer você ' + Nome1)
+        //ou window.alert(´olá, bom conhecer você ${Nome1}´)
+        var n1 = window.prompt('Digite um numero: ')
+        var n2 = window.prompt('Digite outro numero: ')
+        var n3 = n1 + n2
+        window.alert('Resultado: '+ (n1+n2))
+        window.alert('Resultado: '+ n3)
+        var n4 = Number.parseFloat(n1) + Number.parseFloat(n2)
+        window.alert('Resultado: '+ n4)
+        // var n1 = Number.parseInt(window.prompt('Digite um numero: '))
+
+        // Converter pois prompt so pega string, Number.parseInt(n1) ou Number.parseFloat(n1)  e pode simplificar só usando Number(n1) para string: String(n1) ou n1.toString
+
+        /*
+            nome1.length > tamanho
+            nome1.toUpperCase() > tudo maiusculo
+            nome1.toLowerCase() > tudo minusculo
+
+        */
+    </script>
+
+</body>
+</html>

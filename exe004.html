@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiro passos com DOM</title>
+    <style>
+        body{
+            background-color: rgba(0, 0, 0, 0.74);
+            color: white;
+            text-align: center;
+        }
+        div{
+            background-color: rgba(128, 255, 0, 0.623);
+            padding: 10px;
+            width: 100px;
+            margin: auto;
+            border-radius: 10px;
+            
+        }
+        div a {
+            text-decoration: none;
+            font-weight: bold;
+            color: white;
+        }
+        div:hover{
+            background-color: rgba(216, 10, 10, 0.651);
+        }
+    </style>
+</head>
+<body>
+    <h1>INICIANDO DOM</h1>
+    <p id="msg">Aqui vai o resultado</p>
+    <p>Aprendendo a usar <strong>DOM</strong> em Javascript</p>
+    <div><a href="https://www.youtube.com/watch?v=WWZX8RWLxIk&list=PLHz_AreHm4dlsK3Nr9GVvXCbpQyHQl1o1&index=14" target="_blank">Clique aqui</a></div>
+    <script>
+        /*
+        DOM -  no navegador
+        Arvore DOM:
+
+        Window = janela
+        dentro dele temos:
+        (location, document, history)
+        vou tirar print
+        */
+        var p1 = window.document.getElementsByTagName('p')[1]
+        window.document.write(p1.innerText)
+        p1.style.color = 'red'
+        window.document.write('<br>'+p1.innerHTML)
+        var d = window.document.getElementById('msg')
+        d.innerText = 'Estou aguardando'
+        //window.document.getElementById('msg').innerText = "Olá"
+       
+        /*
+        var c = window.document.querySelector('p#msg')
+        c.style.color = 'blue'
+
+        var corpo = window.document.body
+        corpo.style.background = 'black'
+        */
+
+    </script>
+    
+</body>
+</html>

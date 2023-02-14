@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom 2</title>
+    <style>
+        h1{
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            font-style: normal;
+            color: rgb(0, 0, 0);
+            background-image: linear-gradient(to bottom, rgb(2, 255, 2), rgb(8, 255, 82));
+            width: 300px;
+            height: 50px;
+            border-radius: 10px;
+            padding: 25px;
+            margin: auto;
+            margin-top: 10px;
+            font-size:  1.8em;
+        }
+        body{
+            background-color: rgba(0, 0, 0, 0.692);
+        }
+        div{
+            background-color: aqua;
+            width: 330px;
+            margin: auto;
+            margin-top: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 10px;
+            padding-bottom: 5px;
+            border-radius: 10px;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>DOM</h1>
+    <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">
+        Interaja...
+    </div>
+    <script>
+        /*
+        area.addEventListener('onclick', clicar)
+        area.addEventListener('onmouseenter', entrar)
+        area.addEventListener('onmouseout', sair)
+        */
+
+        var area = window.document.getElementById('area')
+        function clicar() {
+            area.innerText = 'Clicou!'
+        }
+        function entrar() {
+            area.style.background ='red'
+            area.innerText = 'Entrou!'
+        }
+        function sair() {
+            area.style.background ='aqua'
+            area.innerText = 'Saiu!'
+        }
+        // detecta erro pelo desenvolvedor do google chormer
+    </script>
+</body>
+</html>
